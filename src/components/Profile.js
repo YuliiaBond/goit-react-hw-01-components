@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 const Profile = ({avatar, name, tag, location, stats}) => (
     <div class="profile">
         <div class="description">
