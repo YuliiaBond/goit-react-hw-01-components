@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const Profile = ({avatar, name, tag, location, stats}) => (
     <div class="profile">
         <div class="description">
@@ -30,5 +30,13 @@ const Profile = ({avatar, name, tag, location, stats}) => (
   </ul>
     </div>
 );
+
+Profile.prototype = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.number.isRequired,
+}
 
 export default Profile;
