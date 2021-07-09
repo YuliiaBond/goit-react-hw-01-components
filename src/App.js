@@ -6,7 +6,7 @@ import TransactionHistory from './components/TransactionHistory';
 import user from './user.json';
 import statisticalData from './statistical-data.json';
 import friends from './friends.json';
-import items from './transactions.json';
+// import items from './transactions.json';
 
 
 const App = () => {

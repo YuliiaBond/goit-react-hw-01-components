@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Statistic from './Statistic';
+import StatisticItem from './StatisticItem';
 const Statistics = ({stats}) => (
   <section class="statistics">
       <h2 class="title">Upload stats</h2>
@@ -9,8 +9,8 @@ const Statistics = ({stats}) => (
       {stats.map(({id, label, percentage}) => (
       
         <li class="item" key={id}>
-          <Statistic
-          label={label}
+          <StatisticItem
+            label={label}
             percentage={percentage}
             />
         </li>

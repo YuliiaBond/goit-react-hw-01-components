@@ -12,8 +12,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
-
-const link = React.createElement('a', { href: 'react.org' }, 'Linkis');
-
-console.log(link);
-// ReactDOM.render(link, document.getElementById('root'));
