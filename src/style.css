@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-color: rgb(235, 248, 255);
+}
+img {
+  display: block;
+}
+li {
+  list-style-type: none;
+}
