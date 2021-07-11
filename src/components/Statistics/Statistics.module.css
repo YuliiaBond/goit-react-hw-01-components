@@ -24,8 +24,6 @@
   padding: 15px;
   border: 1px solid white;
   background-color: rgb(21, 11, 104);
-}
-.text {
   display: grid;
   text-align: center;
 }
