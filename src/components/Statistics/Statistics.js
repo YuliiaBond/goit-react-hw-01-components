@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StatisticItem from './StatisticItem';
 import style from './Statistics.module.css';
-const Statistics = ({ stats }) => (
+const Statistics = ({ title, stats }) => (
   <section className={style.statistics}>
-    <h2 className={style.title}>Upload stats</h2>
+    {title && <h2 className={style.title}>{title}</h2>}
 
     <ul className={style.statList}>
       {stats.map(({ id, label, percentage }) => (
@@ -17,6 +17,7 @@ const Statistics = ({ stats }) => (
 );
 
 Statistics.prototype = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
